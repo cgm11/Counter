@@ -1,0 +1,9 @@
+<h1 *ngIf="!counterParent">Empty</h1>
+
+<h1 *ngIf="counterParent">{{ counterParent }}</h1>
+
+<ul>
+    <li *ngFor="let value of counterHistory">
+        Current value: {{value.currentValue}}, Previous value: {{value.PreviewValue}}
+    </li>
+</ul>
